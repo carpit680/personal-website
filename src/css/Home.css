@@ -1,0 +1,14 @@
+/** @format */
+
+.name {
+    padding: 10px;
+    font-size: 60px;
+}
+
+img {
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	max-width: 100%;
+	height: auto;
+}
