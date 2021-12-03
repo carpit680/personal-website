@@ -7,8 +7,8 @@ const Skills = () => {
 		<div
 			style={{
 				display: "flex",
-				justifyContent: "Right",
-				alignItems: "Right",
+				justifyContent: "Center",
+				alignItems: "Center",
 				height: "100vh",
 			}}>
 			<h1>Skills</h1>

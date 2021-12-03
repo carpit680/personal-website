@@ -22,13 +22,12 @@ const Home = () => {
 					work
 				</a>
 			</div>
-			<div className='about-heading-div'>
-				<h1 className='about-heading'>
-					I am an engineer who <br />
-					loves to work hands-on <br />
-					- based in rainy Manipal.
-					<br />
-					&#9996;
+			<div className='about-heading-div container'>
+				<h1 className='about-heading title'>
+					<span>I am an engineer who </span>
+					<span>loves to work hands-on </span>
+					<span>- based in rainy Manipal.</span>
+					<span>&#9996;</span>
 				</h1>
 			</div>
 			<div className='social-icon-div'>

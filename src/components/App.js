@@ -4,7 +4,7 @@ import React from "react";
 import "../css/App.css";
 // import Navbar from "./Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
@@ -38,7 +38,7 @@ function App() {
 				<span id='circle' class='circle'></span>
 				<Switch>
 					<Route path='/' exact component={Home} />
-					<Route path='/about' component={About} />
+					<Route path='/info' component={About} />
 					<Route path='/skills' component={Skills} />
 					<Route path='/work' component={Work} />
 					<Route path='/blogs' component={Blogs} />
