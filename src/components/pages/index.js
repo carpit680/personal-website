@@ -8,7 +8,9 @@ const Home = () => {
 	return (
 		<div>
 			<h1 className='name'>
-				<a href='/'>Arpit Chauhan</a>
+				<a href='/' id='link'>
+					Arpit Chauhan
+				</a>
 			</h1>
 			<div className='info-div'>
 				<a className='info-link' href='/info'>
@@ -16,12 +18,21 @@ const Home = () => {
 				</a>
 			</div>
 			<div className='work-div'>
-				<a className='work-link' href='/work'>
+				<a className='work-link' id='link' href='/work'>
 					work
 				</a>
 			</div>
+			<div className='about-heading-div'>
+				<h1 className='about-heading'>
+					I am an engineer who <br />
+					loves to work hands-on <br />
+					- based in rainy Manipal.
+					<br />
+					&#9996;
+				</h1>
+			</div>
 			<div className='social-icon-div'>
-				<div className='social-icon'>
+				<div className='social-icon' id='link'>
 					<SocialMediaIconsReact
 						borderColor='rgba(117,115,115,0)'
 						borderWidth='5'
@@ -35,7 +46,7 @@ const Home = () => {
 						size='25'
 					/>
 				</div>
-				<div className='social-icon'>
+				<div className='social-icon' id='link'>
 					<SocialMediaIconsReact
 						borderColor='rgba(117,115,115,0)'
 						borderWidth='5'
@@ -49,7 +60,7 @@ const Home = () => {
 						size='25'
 					/>
 				</div>
-				<div className='social-icon'>
+				<div className='social-icon' id='link'>
 					<SocialMediaIconsReact
 						borderColor='rgba(117,115,115,0)'
 						borderWidth='5'
@@ -63,7 +74,7 @@ const Home = () => {
 						size='25'
 					/>
 				</div>
-				<div className='social-icon'>
+				<div className='social-icon' id='link'>
 					<SocialMediaIconsReact
 						borderColor='rgba(117,115,115,0)'
 						borderWidth='5'

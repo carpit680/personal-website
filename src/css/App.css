@@ -11,5 +11,29 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	transition: background-color .5s;
+	/* transition: background-color .5s; */
 }
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+body,
+html {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background-color: #f1f0f1;
+}
+
+.circle {
+	position: absolute;
+	border: solid 1px #ccc;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: rgba(14, 0, 255, 0.15);
+	pointer-events: none;
+}
+
+/* a:hover + .circle {
+	background-color: rgba(14, 0, 255, 1);
+} */

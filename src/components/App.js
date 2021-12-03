@@ -10,11 +10,32 @@ import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import Work from "./pages/Work";
 import Blogs from "./pages/Blogs";
+import $ from "jquery";
+import jQuery from "jquery";
+
 
 function App() {
+	jQuery(document).ready(function () {
+		var mouseX = 0,
+			mouseY = 0;
+		var xp = 0,
+			yp = 0;
+
+		$(document).mousemove(function (e) {
+			mouseX = e.pageX - 30;
+			mouseY = e.pageY - 30;
+		});
+
+		setInterval(function () {
+			xp += (mouseX - xp) / 9;
+			yp += (mouseY - yp) / 9;
+			$("#circle").css({ left: xp + "px", top: yp + "px" });
+		}, 20);
+	});
 	return (
 		<Router>
 			{/* <Navbar /> */}
+			<span id='circle' class='circle'></span>
 			<Switch>
 				<Route path='/' exact component={Home} />
 				<Route path='/about' component={About} />
