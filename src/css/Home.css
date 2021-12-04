@@ -17,12 +17,15 @@ a:hover {
 }
 
 .name {
-	padding: 2rem;
+	padding: 1.35rem;
 	font-size: 1.15rem;
 	letter-spacing: 0.35rem;
 	text-transform: uppercase;
 	font-family: "Outfit", sans-serif;
-	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 100;
 }
 
 .name a {
@@ -44,6 +47,7 @@ a:hover {
 	top: 0rem;
 	width: 4rem;
 	height: fit-content;
+	z-index: 100;
 }
 
 .work-div {
@@ -69,7 +73,7 @@ a:hover {
 .background-text {
 	font-family: morganite;
 	color: #fff;
-	font-size: 60vw;
+	font-size: 105vh;
 	text-transform: uppercase;
 }
 
@@ -90,7 +94,7 @@ a:hover {
 }
 
 .social-icon-div {
-	padding: 2.5rem 2.5rem;
+	padding: 2rem 2.5rem;
 	position: absolute;
 	bottom: 0;
 	left: 0;
