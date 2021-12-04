@@ -2,8 +2,8 @@
 
 import React from "react";
 import "../css/App.css";
-// import Navbar from "./Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { TweenMax } from "gsap";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -16,26 +16,58 @@ import jQuery from "jquery";
 function App() {
 	if ($(window).width() >= 815) {
 		jQuery(document).ready(function () {
+			var cursor = $(".cursor"),
+				follower = $(".cursor-follower");
+
+			var posX = 0,
+				posY = 0;
+
 			var mouseX = 0,
 				mouseY = 0;
-			var xp = 0,
-				yp = 0;
 
-			$(document).mousemove(function (e) {
-				mouseX = e.pageX - 30;
-				mouseY = e.pageY - 30;
+			TweenMax.to({}, 0.016, {
+				repeat: -1,
+				onRepeat: function () {
+					posX += (mouseX - posX) / 9;
+					posY += (mouseY - posY) / 9;
+
+					TweenMax.set(follower, {
+						css: {
+							left: posX - 12,
+							top: posY - 12,
+						},
+					});
+
+					TweenMax.set(cursor, {
+						css: {
+							left: mouseX,
+							top: mouseY,
+						},
+					});
+				},
 			});
 
-			setInterval(function () {
-				xp += (mouseX - xp) / 9;
-				yp += (mouseY - yp) / 9;
-				$("#circle").css({ left: xp + "px", top: yp + "px" });
-			}, 20);
+			$(document).on("mousemove", function (e) {
+				mouseX = e.clientX;
+				mouseY = e.clientY;
+			});
+
+			$(".link").on("mouseenter", function () {
+				cursor.addClass("active");
+				follower.addClass("active");
+				
+			});
+			$(".link").on("mouseleave", function () {
+				cursor.removeClass("active");
+				follower.removeClass("active");
+			});
 		});
 		return (
 			<Router>
 				{/* <Navbar /> */}
-				<span id='circle' class='circle'></span>
+				{/* <span id='circle' class='circle'></span> */}
+				<div class='cursor'></div>
+				<div class='cursor-follower'></div>
 				<Switch>
 					<Route path='/' exact component={Home} />
 					<Route path='/info' component={About} />
@@ -49,7 +81,9 @@ function App() {
 	} else {
 		return (
 			<div>
-				<h1 className="sorry">Sorry, this website is not supported on mobile devices yet.</h1>
+				<h1 className='sorry'>
+					Sorry, this website is not supported on mobile devices yet.
+				</h1>
 			</div>
 		);
 	}

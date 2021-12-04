@@ -8,17 +8,17 @@ const Home = () => {
 	return (
 		<div>
 			<h1 className='name'>
-				<a href='/' id='link'>
+				<a href='/' className='link'>
 					Arpit Chauhan
 				</a>
 			</h1>
 			<div className='info-div'>
-				<a className='info-link' href='/info'>
+				<a className='info-link link' href='/info'>
 					info
 				</a>
 			</div>
 			<div className='work-div'>
-				<a className='work-link' id='link' href='/work'>
+				<a className='work-link link' href='/work'>
 					work
 				</a>
 			</div>
@@ -31,7 +31,7 @@ const Home = () => {
 				</h1>
 			</div>
 			<div className='social-icon-div'>
-				<div className='social-icon' id='link'>
+				<div className='social-icon link'>
 					<SocialMediaIconsReact
 						borderColor='rgba(117,115,115,0)'
 						borderWidth='5'
@@ -45,7 +45,7 @@ const Home = () => {
 						size='25'
 					/>
 				</div>
-				<div className='social-icon' id='link'>
+				<div className='social-icon link'>
 					<SocialMediaIconsReact
 						borderColor='rgba(117,115,115,0)'
 						borderWidth='5'
@@ -59,7 +59,7 @@ const Home = () => {
 						size='25'
 					/>
 				</div>
-				<div className='social-icon' id='link'>
+				<div className='social-icon link'>
 					<SocialMediaIconsReact
 						borderColor='rgba(117,115,115,0)'
 						borderWidth='5'
@@ -73,7 +73,7 @@ const Home = () => {
 						size='25'
 					/>
 				</div>
-				<div className='social-icon' id='link'>
+				<div className='social-icon link'>
 					<SocialMediaIconsReact
 						borderColor='rgba(117,115,115,0)'
 						borderWidth='5'
