@@ -22,6 +22,11 @@ const Home = () => {
 					work
 				</a>
 			</div>
+			<div className='background-text-div'>
+				<p className='background-text'>
+					Hello
+				</p>
+			</div>
 			<div className='about-heading-div container'>
 				<h1 className='about-heading title'>
 					<span>I am an engineer who </span>
