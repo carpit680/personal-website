@@ -5,11 +5,6 @@ import "../css/App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { TweenMax } from "gsap";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Skills from "./pages/Skills";
-import Work from "./pages/Work";
-import Blogs from "./pages/Blogs";
 import $ from "jquery";
 import jQuery from "jquery";
 
@@ -62,19 +57,15 @@ function App() {
 				follower.removeClass("active");
 			});
 		});
+
 		return (
 			<Router>
 				{/* <Navbar /> */}
 				{/* <span id='circle' class='circle'></span> */}
-				<div class='cursor'></div>
-				<div class='cursor-follower'></div>
+				<div className='cursor'></div>
+				<div className='cursor-follower'></div>
 				<Switch>
 					<Route path='/' exact component={Home} />
-					<Route path='/info' component={About} />
-					<Route path='/skills' component={Skills} />
-					<Route path='/work' component={Work} />
-					<Route path='/blogs' component={Blogs} />
-					<Route path='/contact' component={Contact} />
 				</Switch>
 			</Router>
 		);

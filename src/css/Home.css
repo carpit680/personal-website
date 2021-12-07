@@ -29,7 +29,7 @@ a:hover {
 }
 
 .name a {
-	color: #0d00ff;
+	color: #0d00ff!important;
 }
 
 .name a:hover {
@@ -91,10 +91,12 @@ a:hover {
 	text-align: center;
 	padding: 2rem;
 }
+
 .about-heading {
 	font-family: "Indie Flower", cursive;
 	line-height: 7rem;
 	font-size: 4.5rem;
+	z-index: 100;
 }
 
 .social-icon-div {
@@ -160,4 +162,34 @@ h1 span:last-child {
 		-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
 		clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
 	}
+}
+
+.info-bg {
+	background-color: #000;
+	width: 100vw;
+	height: max-content;
+	min-height: 100vh;
+	position: fixed;
+	top: 100vh;
+	transition: top 0.5s ease-in-out;
+	opacity: 0.5;
+}
+
+.info-bg-active {
+	top: 0;
+	opacity: 1;
+	transition: top 0.5s ease-in-out;
+}
+
+.info-text {
+	color: #fff;
+	font-family: "Indie Flower", cursive;
+	line-height: 7rem;
+	font-size: 4.5rem;
+	z-index: 101;
+}
+
+.white {
+	color: #fff!important;
+
 }
