@@ -60,8 +60,6 @@ function App() {
 
 		return (
 			<Router>
-				{/* <Navbar /> */}
-				{/* <span id='circle' class='circle'></span> */}
 				<div className='cursor'></div>
 				<div className='cursor-follower'></div>
 				<Switch>

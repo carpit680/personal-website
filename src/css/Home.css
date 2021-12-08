@@ -172,12 +172,10 @@ h1 span:last-child {
 	position: fixed;
 	top: 100vh;
 	transition: top 0.5s ease-in-out;
-	opacity: 0.5;
 }
 
 .info-bg-active {
 	top: 0;
-	opacity: 1;
 	transition: top 0.5s ease-in-out;
 }
 
@@ -191,5 +189,4 @@ h1 span:last-child {
 
 .white {
 	color: #fff!important;
-
 }

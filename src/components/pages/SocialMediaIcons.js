@@ -15,7 +15,7 @@ function SocialMediaIcons(props) {
 						borderStyle='solid'
 						icon='mail'
 						iconColor={props.iconColor}
-						backgroundColor={props.bgColor}
+						backgroundColor='rgba(26,166,233,0)'
 						iconSize='5'
 						roundness='0%'
 						url='https://mail.google.com/mail/?view=cm&fs=1&to=carpit680@gmail.com'
@@ -29,7 +29,7 @@ function SocialMediaIcons(props) {
 						borderStyle='solid'
 						icon='instagram'
 						iconColor={props.iconColor}
-						backgroundColor={props.bgColor}
+						backgroundColor='rgba(26,166,233,0)'
 						iconSize='5'
 						roundness='0%'
 						url='https://www.instagram.com/arpittchauhan/'
@@ -43,7 +43,7 @@ function SocialMediaIcons(props) {
 						borderStyle='solid'
 						icon='github'
 						iconColor={props.iconColor}
-						backgroundColor={props.bgColor}
+						backgroundColor='rgba(26,166,233,0)'
 						iconSize='5'
 						roundness='0%'
 						url='https://github.com/carpit680'
@@ -57,7 +57,7 @@ function SocialMediaIcons(props) {
 						borderStyle='solid'
 						icon='linkedin'
 						iconColor={props.iconColor}
-						backgroundColor={props.bgColor}
+						backgroundColor='rgba(26,166,233,0)'
 						iconSize='5'
 						roundness='0%'
 						url='https://www.linkedin.com/in/arpitchauhan100/'
